@@ -26,7 +26,7 @@ The latest results are updated in 1results.txt`.
 import sys
 import os
 import webbrowser
-from playsound import playsound
+# from playsound import playsound
 import pickle
 import pkg_resources
 import os
@@ -155,7 +155,7 @@ class Evaluate:
                     print("    Updated: {}".format(record.updated))
                     if self.play_sound:
                         sound_file = pkg_resources.resource_filename('chemdataextractor', 'eval/sound.mp3')
-                        playsound(sound_file)
+                        # playsound(sound_file)
 
                     if not doc_opened and self.show_website:
                         webbrowser.open(doc[0].metadata.html_url)
@@ -272,7 +272,7 @@ class Evaluate:
             if self.limits_reached:
                 if self.play_sound:
                     sound_end_file = pkg_resources.resource_filename('chemdataextractor', 'eval/sound_end.mp3')
-                    playsound(sound_end_file)
+                    # playsound(sound_end_file)
                 break
             print("")
         f.close()

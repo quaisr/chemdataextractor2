@@ -28,7 +28,6 @@ jobs:
         pip install nbsphinx==0.3.5 nbsphinx-link m2r ipython ipykernel sphinx-rtd-theme
         pip install future==0.17.1
         pip install unittest2==1.1.0
-        pip install playsound
         pip install -r requirements/development.txt
         pip install .
         cde data download
