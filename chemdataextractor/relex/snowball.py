@@ -30,7 +30,7 @@ from ..parse.auto import BaseSentenceParser, BaseAutoParser
 import logging
 
 from os.path import basename
-from playsound import playsound
+# from playsound import playsound
 import pkg_resources
 
 log = logging.getLogger(__name__)
@@ -250,7 +250,7 @@ class Snowball(BaseSentenceParser):
 
             if self.play_sound:
                 sound_file = pkg_resources.resource_filename('chemdataextractor', 'eval/sound.mp3')
-                playsound(sound_file)
+                # playsound(sound_file)
             res = six.moves.input("...: ").replace(' ', '')
             if res:
                 chosen_candidate_idx = res.split(',')
