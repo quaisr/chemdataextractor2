@@ -55,6 +55,8 @@ setup(
         "overrides==3.1.0",
         "boto3==1.15.18",
         "unittest2",
+        "wheel",
+        "setuptools",
         "playsound",
     ],
     classifiers=[
